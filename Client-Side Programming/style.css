@@ -3,12 +3,40 @@
   padding: 0;
 }
 
+html{
+  border: solid 7px black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body{
   background-color: pink;
+
 }
 
 #box-1{
+  border: solid 4px black;
+  background-color: white;
+  background-image: url("watch.jpg");
+  background-repeat:no-repeat;
+   background-size: 100% 100%;
+  width: 30%;
+  height: 30em;
+}
+
+#box-1 img{
+  max-width: 100%;
+
+}
+
+#box-2{
+  border: solid 5px black;
   background-color: white;
   width: 30%;
-  height: 5em;
+  height: 30em;
+  float: right;
+
+
 }
