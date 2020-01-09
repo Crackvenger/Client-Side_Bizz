@@ -55,6 +55,8 @@ body{
 #box-5{
   border: solid 3px black;
   background-color: white;
+  position: relative;
+  left: 30em;
   min-width: 10%;
   max-width: 20%;
   height: 20em;
