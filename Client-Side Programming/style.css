@@ -4,7 +4,7 @@
 }
 
 html{
-  border: solid 7px black;
+  border: solid 0.2em black;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -13,6 +13,10 @@ html{
 
 body{
   background-color: pink;
+
+}
+
+.nameTag{
 
 }
 
@@ -54,9 +58,8 @@ body{
 #box-5{
   border: solid 3px black;
   background-color: white;
-  position: relative;
-  left: 30em;
+  float: left;
   min-width: 10%;
   max-width: 20%;
-  height: 20em;
+  height: 25em;
 }
