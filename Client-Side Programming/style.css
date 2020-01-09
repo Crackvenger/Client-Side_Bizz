@@ -17,7 +17,7 @@ body{
 }
 
 #box-1{
-  border: solid 4px black;
+  border: solid 3px black;
   background-color: white;
   background-image: url("watch.jpg");
   background-repeat:no-repeat;
@@ -32,11 +32,21 @@ body{
 }
 
 #box-2{
-  border: solid 5px black;
+  border: solid 3px black;
   background-color: white;
   width: 30%;
   height: 30em;
   float: right;
+  position: relative;
+  bottom: 10em;
 
+}
 
+#box-3{
+  border: solid 3px black;
+  background-color: white;
+  min-width: 10%;
+  max-width: 20%;
+  height: 20em;
+  margin: 0 1em 0 4%;
 }
