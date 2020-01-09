@@ -31,18 +31,18 @@ body{
 }
 
 #box-1 img{
-  max-width: 300%;
+  max-width: 100%;
 
 }
 
 #box-2{
   border: solid 3px black;
   background-color: white;
-  width: 30%;
+  width: 45%;
   height: 30em;
   float: right;
   position: relative;
-  bottom: 10em;
+  bottom: 20em;
 
 }
 
@@ -51,15 +51,59 @@ body{
   background-color: white;
   min-width: 10%;
   max-width: 20%;
-  height: 20em;
+  height: 13em;
   margin: 0 1em 0 4%;
+}
+
+#box-4{
+  border: solid 3px black;
+  background-color: white;
+  position: relative;
+  left: 30.25%;
+  bottom: 43.75em;
+  width: 30%;
+  /* min-width: 10%;
+  max-width: 30%; */
+  height: 10em;
 }
 
 #box-5{
   border: solid 3px black;
   background-color: white;
-  float: left;
+  position: relative; bottom:15.65em;
+  left: 23em;
   min-width: 10%;
-  max-width: 20%;
-  height: 25em;
+  max-width: 30%;
+  height: 8em;
+}
+
+#box-6{
+  border: solid 3px black;
+  background-color: white;
+  position: relative;
+  left: 5.4em;/*28.75em;*/bottom: 22em;
+  /* min-width: 10%;
+  max-width: 30%; */
+  width: 50%;
+  height: 19.5em;
+}
+
+#image-cart
+{
+  border: solid 3px black;
+  position: relative;
+  bottom: 112.3ex;
+  left: 63.5ex;
+  height:5em;
+  width:10em;
+}
+
+#image-search
+{
+  border: solid 3px black;
+  position: relative;
+  bottom: 122ex;
+  left: 122ex;
+  height:5em;
+  width:5em;
 }
