@@ -41,6 +41,7 @@ body{
   height: 40em;
   float: right;
   position: relative;
+  margin-bottom: -100vh;
   top: -40em;
   clear: both;
 
@@ -73,25 +74,26 @@ body{
 #box-5{
   border: solid thin black;
   background-color: white;
+  margin-bottom: -15em;
   position: relative;
-  top: -6.99em;
+  top: -10.99em;
   left: 38em;
   min-width: 10%;
-  max-width: 30%;
-  height: 8vh;
+  max-width: 39.8%;
+  height: 9vh;
 }
 
 #box-6{
   border: solid thin black;
+  top: -19.8em;
   background-color: white;
   position: relative;
   left: 38em;
-  top: -40em;
   /*28.75em;*/
   /* min-width: 10%;
   max-width: 30%; */
   width: 20%;
-  height: 27.5em;
+  height: 17.5em;
 }
 
 #box-7{
