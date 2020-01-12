@@ -61,7 +61,7 @@ body{
   border: solid thin black;
   background-color: white;
   float: left;
-    width: 44.8%;
+    width: 43%;
   /*position: relative;
   left: 50.66em;
   top: -53.68em;
@@ -74,13 +74,13 @@ body{
 #box-5{
   border: solid thin black;
   background-color: white;
-  margin-bottom: -15em;
+  margin-bottom: 0em;
   position: relative;
   top: -10.99em;
-  left: 38em;
+  left: 28em;
   min-width: 10%;
-  max-width: 39.8%;
-  height: 9vh;
+  max-width: 47.7%;
+  height: 13vh;
 }
 
 #box-6{
@@ -98,7 +98,7 @@ body{
 
 #box-7{
 background-color: pink;
-width: 25%;
+width: 26%;
 float: right;
 }
 #image-cart
