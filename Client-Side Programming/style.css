@@ -4,17 +4,13 @@
 }
 
 html{
-  border: solid thick black;
+  /* border: solid thick black; */
   margin: 0;
   padding: 0;
 }
 
 body{
   background-color: pink;
-
-}
-
-.nameTag{
 
 }
 
@@ -31,7 +27,6 @@ body{
 
 #box-1 img{
   max-width: 100%;
-
 }
 
 #box-2{
@@ -44,7 +39,6 @@ body{
   margin-bottom: -100vh;
   top: -40em;
   clear: both;
-
 }
 
 #box-3{
@@ -125,6 +119,60 @@ float: right;
   left: 100em;
   /*bottom: 122ex;
   left: 122ex;
-
 */
+}
+
+@media only screen and (max-width: 426px){
+     #box-1{
+  background-size: 100% 80%;
+  width: 35%;
+  height: 12em;
+}
+
+#box-2{
+   /* position: relative;
+   right:0.1px */
+   top: -200px;
+   width: 34%;
+   height: 10em;
+}
+
+#box-3{
+
+  height: 12vh;
+  margin: 0 0 0 4vh;
+  clear: both;
+}
+
+#box-4{
+    width: 34%;
+  height: 4.6em;
+}
+
+#box-5{
+   margin-bottom: 0;
+  position: relative;
+  top: -3em;
+  left: 7em; 
+  min-width: 20%;
+  max-width: 39%;
+  height: 11vh;
+}
+
+#box-6{
+  top: -14.7em;
+  position: relative;
+  left: 9.4em;
+  
+  width: 23%;
+  height: 7em;
+}
+
+#image-cart
+{
+  height:5vh;
+  width:5vh;
+  position: relative;
+  right:1.4em;
+  
 }
