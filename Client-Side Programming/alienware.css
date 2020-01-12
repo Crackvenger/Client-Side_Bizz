@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  border: solid thick black;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: pink;
+
+}
+
+.nameTag{
+
+}
+
+#box-1{
+  border: solid thin black;
+  background-color: white;
+  background-image: url("watch.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  width: 30%;
+  height: 40em;
+  float: left;
+}
+
+#box-1 img{
+  max-width: 100%;
+
+}
+
+#box-2{
+  border: solid thin black;
+  background-color: white;
+  width: 30%;
+  height: 40em;
+  float: right;
+  position: relative;
+  margin-bottom: -100vh;
+  top: -40em;
+  clear: both;
+
+}
+
+#box-3{
+  border: solid thin black;
+  background-color: white;
+  min-width: 10%;
+  max-width: 20%;
+  height: 30vh;
+  margin: 0 0 0 4vh;
+  clear: both;
+}
+
+#box-4{
+  border: solid thin black;
+  background-color: white;
+  float: left;
+    width: 43%;
+  /*position: relative;
+  left: 50.66em;
+  top: -53.68em;
+
+  /* min-width: 10%;
+  max-width: 30%; */
+  height: 20.30em;
+}
+
+#box-5{
+  border: solid thin black;
+  background-color: white;
+  margin-bottom: 0em;
+  position: relative;
+  top: -10.99em;
+  left: 28em;
+  min-width: 10%;
+  max-width: 47.7%;
+  height: 13vh;
+}
+
+#box-6{
+  border: solid thin black;
+  top: -37.2em;
+  background-color: white;
+  position: relative;
+  left: 38em;
+  /*28.75em;*/
+  /* min-width: 10%;
+  max-width: 30%; */
+  width: 20%;
+  height: 17.5em;
+}
+
+#box-7{
+background-color: pink;
+width: 26%;
+float: right;
+}
+#image-cart
+{
+  height:10vh;
+  width:9vh;
+  float: left;
+/*  border: solid thin black;
+  position: relative;
+  top: -20.4vh;
+  left: 83.5vh;
+
+*/
+}
+
+#image-search
+{
+  height:5vh;
+  width:5vh;
+  float: right;
+/*  border: solid thin black;
+  position: relative;
+  top: -0.30em;
+  left: 100em;
+  /*bottom: 122ex;
+  left: 122ex;
+
+*/
+}
