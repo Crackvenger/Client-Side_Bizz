@@ -152,9 +152,41 @@ form {
 }
 
 #box-7{
-background-color: pink;
-width: 15%;
-
+background-color: blue;
+z-index: 1;
+width: 30%;
+float: right;
+margin-top: -15em;
+}
+.ContRound
+{
+  overflow: hidden;
+  opacity: 0.8;
+  float: left;
+  font-size: 0.9em;
+  margin: -26em -3em 0em 20em;
+  padding: 0.5em;
+  width: 20%;
+  background-color: #090636;
+  color: white;
+  text-align: center;
+  border-radius: 40%;
+  height: 25em;
+}
+.ContRound2
+{
+  overflow: hidden;
+  opacity: 0.8;
+  float: right;
+  font-size: 0.9em;
+  margin: -26em 20em 0em 0em;
+  padding: 0.5em;
+  width: 20%;
+  background-color: #090636;
+  color: white;
+  text-align: center;
+  border-radius: 40%;
+  height: 25em;
 }
 #image-cart
 {
