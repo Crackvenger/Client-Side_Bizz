@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -22,9 +22,18 @@
     </div>
     <div id="box-1">
       <h2>1</h2>
+      <button id="priceBtn" onclick="showPrice()">Price</button>
+      <div id=hiddenPrice>
+      <p>$13.50</p>
+      <button id="priceBtn" onclick="notify()">Buy</button>
+      </div>
     </div>
     <div id="box-4">
       <h2>4</h2>
+      <div class="container">
+      <h2 class="hexColor">The Hex Code of this color is : <span class="hex"></span></h2>
+      <button type="button" class="hexBtn">press here to change color</button>
+    </div>
     </div>
     <div id="box-7">
     <div>
@@ -55,5 +64,6 @@
     <div class="ContRound2">
       <h2>Read Me</h2>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

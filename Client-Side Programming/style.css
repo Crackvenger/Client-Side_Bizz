@@ -68,6 +68,9 @@ form {
     background color: pink;
 }
 
+#hiddenPrice{
+    display: none;
+}
 
 #box-1{
   border: solid thin black;
