@@ -1,21 +1,20 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="(min-width: 1366px)" href="../Client-side.css">
-    <link rel="stylesheet" media="(max-width: 1500px)" href="../Client-side.css">
-    <link rel="stylesheet" media="(min-width: 2031px)" href="alienware.css">
-    <link rel="stylesheet" media="(max-width: 2560px)" href="alienware.css">
   </head>
   <body>
     <div id="header">
-        <div id="logo">
-            <a href="Client-side.html"><img src="../shop.png" alt="logo" height="100%" width="100%"></a>
-        </div>
-        <form method="POST" name="form">
+      <div id="logo">
+          <a href="Client-side.html"><img src="../shop.png" alt="logo" height="100%" width="100%"></a>
+      </div>
+      <form>
+      <input class="search" type="search" placeholder="Search...">
+      <input class="button" type="submit" value="Search">
+      </form>
+      <form method="POST" name="form">
     <p>You've been here<input type="text" size="8" name="textbox"></p>
 </form>
 
@@ -27,62 +26,47 @@ var msec=0;
 function write()
 {
 msec=msec+1;
-if(msec==30){msec=0; secs=secs+1;}
+if(msec==60){msec=0; secs=secs+1;}
 if(secs==60){secs=0; mins=mins+1;}
 document.form.textbox.value=mins+":"+secs+":"+msec;
 setTimeout("write()",1);
 }
 setTimeout("write()",1);
 // --></script></p>
-        <form>
-        <input class="search" type="search" placeholder="Search...">
-        <input class="button" type="submit" value="Search">
-        </form>
-    </div>
+  </div>
     <div id="box-1">
-      <h2>1</h2>
+      <h1>1</h1>
       <button id="priceBtn" onclick="showPrice()">Price</button>
-      <div id=hiddenPrice>
-      <p>$13.50</p>
-      <button id="priceBtn" onclick="notify()">Buy</button>
-      </div>
+    <div id=hiddenPrice>
+    <p>$13.50</p>
+    <button id="priceBtn" onclick="notify()">Buy</button>
+    </div>
     </div>
     <div id="box-4">
-      <h2>4</h2>
+      <h1>4</h1>
       <div class="container">
       <h2 class="hexColor">The Hex Code of this color is : <span class="hex"></span></h2>
       <button type="button" class="hexBtn">press here to change color</button>
     </div>
     </div>
-    <div id="box-7">
-    <div>
-      <img id="image-cart" src="cart.png" alt="cart">
-    </div>
-    <div>
-      <img id="image-search" src="search.png" alt="search">
-    </div>
-  </div>
-    <div id="box-3">
-      <h2>3</h2>
-    </div>
     <div id="box-2">
-      <h2>2</h2>
+      <h1>2</h1>
+    </div>
+  <div>
+  <!--  <img id="image-cart" src="cart.png" alt="cart">
+  </div>
+  <div>
+    <img id="image-search" src="search.png" alt="search">
+  </div>-->
+    <div id="box-6">
+      <h1>6</h1>
+    </div>
+    <div id="box-3">
+      <h1>3</h1>
     </div>
     <div id="box-5">
-      <h2>5</h2>
+      <h1>5</h1>
     </div>
-    <div id="box-6">
-      <h2>6</h2>
-    </div>
-    <div class="ContRound">
-      <h2>Read Me</h2>
-    </div>
-    <div class="ContRound2">
-      <h2>Read Me</h2>
-    </div>
-    <div class="ContRound2">
-      <h2>Read Me</h2>
-    </div>
-    <script src="script.js"></script>
+      <script src="script.js"></script>
   </body>
 </html>
