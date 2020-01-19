@@ -15,6 +15,25 @@
         <div id="logo">
             <a href="Client-side.html"><img src="../shop.png" alt="logo" height="100%" width="100%"></a>
         </div>
+        <form method="POST" name="form">
+    <p>You've been here<input type="text" size="8" name="textbox"></p>
+</form>
+
+<p><script language="JavaScript"><!--
+var mins=0;
+var secs=0;
+var msec=0;
+
+function write()
+{
+msec=msec+1;
+if(msec==30){msec=0; secs=secs+1;}
+if(secs==60){secs=0; mins=mins+1;}
+document.form.textbox.value=mins+":"+secs+":"+msec;
+setTimeout("write()",1);
+}
+setTimeout("write()",1);
+// --></script></p>
         <form>
         <input class="search" type="search" placeholder="Search...">
         <input class="button" type="submit" value="Search">
