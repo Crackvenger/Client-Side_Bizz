@@ -1,3 +1,4 @@
+
 function notify()
 {
   alert("Thanks for your purchase!")
