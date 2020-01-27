@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>index</title>
+    <title>grid practice</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -14,59 +14,26 @@
       <input class="search" type="search" placeholder="Search...">
       <input class="button" type="submit" value="Search">
       </form>
-      <form method="POST" name="form">
-    <p>You've been here<input type="text" size="8" name="textbox"></p>
-</form>
-
-<p><script language="JavaScript"><!--
-var mins=0;
-var secs=0;
-var msec=0;
-
-function write()
-{
-msec=msec+1;
-if(msec==60){msec=0; secs=secs+1;}
-if(secs==60){secs=0; mins=mins+1;}
-document.form.textbox.value=mins+":"+secs+":"+msec;
-setTimeout("write()",1);
-}
-setTimeout("write()",1);
-// --></script></p>
-  </div>
-    <div id="box-1">
-      <h1>1</h1>
-      <button id="priceBtn" onclick="showPrice()">Price</button>
-    <div id=hiddenPrice>
-    <p>$13.50</p>
-    <button id="priceBtn" onclick="notify()">Buy</button>
+      <div id="hiddenPrice1">
+        <h1>Vintage Fake Watch</h1>
+        <p>This watch is fake...but its vintage!</p>
+        <h2>$13.50</h2>
+      </div>
+      <div id="hiddenPrice2">
+        <h1>Vintage Fake belt</h1>
+        <p>This belt is fake...but its vintage!</p>
+        <h2>$16.50</h2>
+      </div>
+    <div class="container">
+    <div onmouseover="showPrice1()" onmouseout="hidePrice1()" class="hex hex1"><div class="hex-1"><div class="hex-2" style="background: url(watch.jpg) no-repeat 50%; background-size:cover;"></div></div></div>
+    <div onmouseover="showPrice2()" onmouseout="hidePrice2()" class="hex hex2"><div class="hex-1"><div class="hex-2" style="background: url(belt.jpg) no-repeat 50%; background-size:contain;"></div></div></div>
+    <div class="hex hex3"><div class="hex-1"><div class="hex-2" style="background-color: indigo;"></div></div></div>
+    <div class="hex hex4"><div class="hex-1"><div class="hex-2" style="background-color: orange;"></div></div></div>
+    <div class="hex hex5"><div class="hex-1"><div class="hex-2" style="background-color: red;"></div></div></div>
+    <div class="hex hex6"><div class="hex-1"><div class="hex-2" style="background-color: yellow;"></div></div></div>
+    <div class="hex hex7"><div class="hex-1"><div class="hex-2" style="background-color: blue;"></div></div></div>
+    <div class="hex hex8"><div class="hex-1"><div class="hex-2" style="background-color: green;"></div></div></div>
     </div>
-    </div>
-    <div id="box-4">
-      <h1>4</h1>
-      <div class="container">
-      <h2 class="hexColor">The Hex Code of this color is : <span class="hex"></span></h2>
-      <button type="button" class="hexBtn">press here to change color</button>
-    </div>
-    </div>
-    <div id="box-2">
-      <h1>2</h1>
-    </div>
-  <div>
-  <!--  <img id="image-cart" src="cart.png" alt="cart">
-  </div>
-  <div>
-    <img id="image-search" src="search.png" alt="search">
-  </div>-->
-    <div id="box-6">
-      <h1>6</h1>
-    </div>
-    <div id="box-3">
-      <h1>3</h1>
-    </div>
-    <div id="box-5">
-      <h1>5</h1>
-    </div>
-      <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

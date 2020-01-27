@@ -3,13 +3,8 @@
   padding: 0;
 }
 
-
-
-body{
-  /*background: linear-gradient(to bottom, #009999 0%, #ff99cc 100%);*/
-  margin: 0;
-  padding: 0;
-  background-color: pink;
+body {
+    background-color: #B0455C;
 }
 
 #header {
@@ -60,159 +55,113 @@ form {
     border-bottom: 4px orange solid;
 }
 
-/*javascript background color changer*/
 .container {
-	text-align: center;
+  display: grid;
+  grid-template-columns:[line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20%;
+  grid-template-rows:auto;
+  grid-template-areas:
+      "hex1 . hex3 . hex5"
+      ". hex2 . hex4 ."
+      "hex7 . hex6 . hex8";
+  width: 55%;
+  height: 50vh;
+  margin: 5% auto;
+
 }
 
-.hexColor {
-	text-transform: capitalize;
-}
 
 .hex {
-	font-size: 1rem;
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate(120deg);
 }
 
-.hexBtn {
-	color: #f15025;
-	border: 3px solid #f15025;
-	border-radius: 7px;
-	background: rgba(0,0,0,0.6);
-	font-size: 0.6rem;
-	padding: 0.25rem 0.5rem;
-	cursor: pointer;
-	outline: none;
-	text-transform: capitalize;
-}
-.hexBtn:hover{
-	background: rgb(0,0,0);
-}
-/*End of style*/
-
-
-#content {
-   /* padding: 20px; */
-    background color: pink;
+.hex-1 {
+  overflow: hidden;
+   width: 100%;
+   height: 100%;
+   transform: rotate(-60deg);
 }
 
-
-#hiddenPrice{
-    display: none;
-    background-color: black;
-    color: yellow;
-    font-size: 5em;
-    width: 40%;
-    border: solid 2px blue;
-    border-radius: 10%;
+.hex-2 {
+  width: 100%;
+   height: 100%;
+   visibility: visible;
+   cursor: pointer;
+  transform: rotate(-60deg);
+  z-index: 1;
 }
 
-#priceBtn {
-  color: #f15025;
-	border: 3px solid #f15025;
-	border-radius: 7px;
-	background: rgba(0,0,0,0.6);
-	font-size: 1rem;
-	padding: 0.25rem 0.5rem;
-	cursor: pointer;
-	outline: none;
-	text-transform: capitalize;
+.hex1 {
+  grid-area: hex1;
+  width: 150%;
+  height: 150%;
 }
 
-
-#box-1{
-  background-color: white;
-  border: solid thick black;
-  width: 30%;
-  height: 39rem;
-  float: left;
+.hex2 {
+  grid-area: hex2;
+  width: 150%;
+  height: 150%;
 }
 
-#box-2{
-  background-color: white;
-  border: solid thick black;
-  width: 34%;
-  height: 39rem;
-  float: right;
-  margin-top: -10em;
+.hex3 {
+  grid-area: hex3;
+  width: 150%;
+  height: 150%;
 }
 
-#box-3{
-  background-color: white;
-  border: solid thick black;
-  float: left;
-  width: 19%;
-  height: 24rem;
-  margin: -10.9em 0 0 0;
+.hex4 {
+  grid-area: hex4;
+  width: 150%;
+  height: 150%;
 }
 
-#box-4{
-  background-color: white;
-  border: solid thick black;
-  float: left;
-  width: 39.211%;
-  height: 16rem;
-  margin-bottom: 10rem;
+.hex5 {
+  grid-area: hex5;
+  width: 150%;
+  height: 150%;
 }
 
-#box-5{
-  background-color: white;
-  border: solid thick black;
-  width: 45.7%;
-  height: 17rem;
-  float: left;
+.hex6 {
+  grid-area: hex6;
+  width: 150%;
+  height: 150%;
 }
 
-@media (min-width: 867px) and (max-width: 1980px ) {
-
-  #box-2{
-    width: 30%;
-  }
-
-  #box-5{
-    width: 48.8%;
-  }
+.hex7 {
+  grid-area: hex7;
+  width: 150%;
+  height: 150%;
 }
 
-#box-6{
-  background-color: white;
-  border: solid thick black;
-  width: 20%;
-  height: 23rem;
-  margin-right: 14px;
-  float: left;
+.hex8 {
+  grid-area: hex8;
+  width: 150%;
+  height: 150%;
 }
 
-#box-7{
-background-color: pink;
-min-width: 30%;
-height: 10rem;
-float: right;
+#hiddenPrice1 {
+  position: absolute;
+  left: 36%;
+  top: 180%;
+  background-color: black;
+  color: yellow;
+  height: 40vh;
+  width: 20vh;
+  z-index: 2;
+  border-radius: 6%;
+  visibility: hidden;
 }
 
-#image-cart
-{
-  height:10vh;
-  width:9vh;
-  float: left;
-/*  border: solid 2px black;
-  position: relative;
-  top: -20.4vh;
-  left: 83.5vh;
-
-*/
-}
-
-#image-search
-{
-  height:5vh;
-  width:5vh;
-  float: right;
-/*  border: solid 2px black;
-  position: relative;
-  top: -0.30em;
-  left: 100em;
-  /*bottom: 122ex;
-  left: 122ex;
-
-*/
+#hiddenPrice2 {
+  position: absolute;
+  left: 46%;
+  top: 380%;
+  border-radius: 6%;
+  background-color: black;
+  color: yellow;
+  height: 40vh;
+  width: 20vh;
+  z-index: 2;
+  visibility: visible;
 }
