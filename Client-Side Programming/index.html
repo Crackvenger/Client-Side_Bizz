@@ -14,6 +14,27 @@
       <input class="search" type="search" placeholder="Search...">
       <input class="button" type="submit" value="Search">
       </form>
+      <form method="POST" name="form">
+    <p>You've been here<input type="text" size="8" name="textbox"></p>
+</form>
+
+<p><script language="JavaScript"><!--
+var mins=0;
+var secs=0;
+var msec=0;
+
+
+function write()
+{
+msec=msec+1;
+if(msec==60){msec=0; secs=secs+1;}
+if(secs==60){secs=0; mins=mins+1;}
+document.form.textbox.value=mins+":"+secs+":"+msec;
+setTimeout("write()",1);
+}
+setTimeout("write()",1);
+// --></script></p>
+    </div>
       <div id="hiddenPrice1">
         <h1>Vintage Fake Watch</h1>
         <p>This watch is fake...but its vintage!</p>
