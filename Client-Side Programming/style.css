@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #B0455C;
+  background: rgb(11,166,138);
+  background: linear-gradient(90deg, rgba(11,166,138,0.8242647400757178) 8%, rgba(255,0,154,1) 53%, rgba(29,241,167,1) 80%);
 }
 
 #header {
@@ -62,9 +63,11 @@ form {
   grid-template-areas:
       "hex1 . hex3 . hex5"
       ". hex2 . hex4 ."
-      "hex7 . hex6 . hex8";
+      "hex7 . hex6 . hex8"
+      ". hex9 . hex10 ."
+      ". . hex11 . .";
   width: 55%;
-  height: 50vh;
+  height: 65vh;
   margin: 5% auto;
 
 }
@@ -136,6 +139,24 @@ form {
 
 .hex8 {
   grid-area: hex8;
+  width: 150%;
+  height: 150%;
+}
+
+.hex9 {
+  grid-area: hex9;
+  width: 150%;
+  height: 150%;
+}
+
+.hex10 {
+  grid-area: hex10;
+  width: 150%;
+  height: 150%;
+}
+
+.hex11 {
+  grid-area: hex11;
   width: 150%;
   height: 150%;
 }
