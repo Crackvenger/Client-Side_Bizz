@@ -27,7 +27,7 @@ var msec=0;
 function write()
 {
 msec=msec+1;
-if(msec==60){msec=0; secs=secs+1;}
+if(msec==1000){msec=0; secs=secs+1;}
 if(secs==60){secs=0; mins=mins+1;}
 document.form.textbox.value=mins+":"+secs+":"+msec;
 setTimeout("write()",1);
@@ -57,7 +57,8 @@ setTimeout("write()",1);
     <div class="hex hex9"><div class="hex-1"><div class="hex-2" style="background-color: silver;"></div></div></div>
     <div class="hex hex10"><div class="hex-1"><div class="hex-2" style="background-color: maroon;"></div></div></div>
     <div class="hex hex11"><div class="hex-1"><div class="hex-2" style="background-color: gold;"></div></div></div>
-    </div>
+    <div class="ads"></div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -21,14 +21,14 @@ body {
 
 #logo {
     order: 1;
-    min-height: 2vh;
-    max-height: 4vh;
-    width: 28vh;
+    height: 50%;
+    width: 20%;
 }
 
 form {
   order: 2;
     width:24.7%;
+    height: 55%;
 
 }
 .search {
@@ -37,7 +37,7 @@ form {
     background: #f0f8ff;
     border: 10% solid black;
     width: 100%;
-    min-height: 4vh;
+    height: 90%;
 }
 .button {
  /*   left:-4px; */
@@ -68,16 +68,16 @@ form {
 
 .container {
   display: grid;
-  grid-template-columns:[line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20%;
+  grid-template-columns:[line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20% [line6] 20% [line7] 20%;
   grid-template-rows:auto;
   grid-template-areas:
-      "hex1 . hex3 . hex5"
-      ". hex2 . hex4 ."
-      "hex7 . hex6 . hex8"
-      ". hex9 . hex10 ."
-      ". . hex11 . .";
+      "hex1 . hex3 . hex5 . ads"
+      ". hex2 . hex4 . . ads"
+      "hex7 . hex6 . hex8 . ads"
+      ". hex9 . hex10 . . ads"
+      ". . hex11 . . . ads";
   width: 55%;
-  height: 65vh;
+  height: 76vh;
   margin: 5% auto;
 
 }
@@ -171,6 +171,13 @@ form {
   height: 150%;
 }
 
+.ads {
+  grid-area: ads;
+  min-height: 100%;
+  width: 100%;
+  background: url(bestad.jpg) no-repeat 50%;
+  background-size: 290%;
+}
 #hiddenPrice1 {
   position: absolute;
   left: 36%;
@@ -196,5 +203,5 @@ form {
   height: 40vh;
   width: 20vh;
   z-index: 2;
-  visibility: visible;
+  visibility: hidden;
 }

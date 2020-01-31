@@ -1,3 +1,5 @@
+var picture = [];
+
 function showPrice1() {
   document.getElementById("hiddenPrice1").style.visibility= 'visible';
 }
@@ -10,3 +12,4 @@ function showPrice2() {
 function hidePrice2() {
   document.getElementById("hiddenPrice2").style.visibility= 'hidden';
 }
+function 
