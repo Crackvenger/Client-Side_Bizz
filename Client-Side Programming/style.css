@@ -10,40 +10,45 @@ body {
 
 #header {
   margin-top: 0;
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
     height: 6rem;
     width: 100%;
     background: yellow;
 }
 
 #logo {
-    float: left;
-    height: 4vh;
+    order: 1;
+    min-height: 2vh;
+    max-height: 4vh;
     width: 28vh;
 }
 
 form {
+  order: 2;
     width:24.7%;
-    margin: auto;
+
 }
 .search {
-    padding: 2% 5%;
+  flex-grow: 2;
+    order: 3;
     background: #f0f8ff;
     border: 10% solid black;
-    width: 80%;
-    margin-top: 3%;
-    display: inline-block;
+    width: 100%;
+    min-height: 4vh;
 }
 .button {
  /*   left:-4px; */
-    padding: 2% 5%;
+ order: 3;
     border: 0px solid black;
     background-color: black;
     color: #fafafa;
     font-weight: bold;
-    margin-top: 3%;
-    width: 20%;
-    float: right;
+    height: 40%;
+    min-width: 5%;
+
 }
 .button: hover {
     background: #008080;
@@ -54,6 +59,11 @@ form {
 
 .active {
     border-bottom: 4px orange solid;
+}
+
+.timer {
+  order: 4;
+  align-self: flex-end;
 }
 
 .container {
