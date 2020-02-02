@@ -175,8 +175,9 @@ form {
   grid-area: ads;
   min-height: 100%;
   width: 100%;
-  background: url(bestad.jpg) no-repeat 50%;
-  background-size: 290%;
+  background: url(bestad.jpg) no-repeat;
+  background-position:
+  background-size: cover;
 }
 #hiddenPrice1 {
   position: absolute;
