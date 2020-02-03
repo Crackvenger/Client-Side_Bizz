@@ -24,3 +24,19 @@ function showPrice2() {
 function hidePrice2() {
   document.getElementById("hiddenPrice2").style.visibility= 'hidden';
 }
+function showPrice3() {                                 
+document.getElementById("hiddenPrice3").style.visibility=
+    'visible';
+}
+function hidePrice3() {
+    document.getElementById("hiddenPrice3").style.visibilty= 'hidden';
+}
+
+function showPrice4() {
+    document.getElementById("hiddenPrice4").style.visibility=
+'visible';
+}
+function hidePrice4() {
+    document.getElemetById("hiddenPrice4").style.visibility=
+    'hidden';
+}
