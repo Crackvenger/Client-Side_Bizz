@@ -20,9 +20,11 @@ body {
 }
 
 #logo {
-    order: 1;
-    height: 50%;
-    width: 20%;
+    position: absolute;
+    top: 13 %;
+    float: left;
+    height: 6vh;
+    width: 30vh;
 }
 
 form {
