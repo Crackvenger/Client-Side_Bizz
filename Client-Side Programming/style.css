@@ -28,18 +28,16 @@ body {
 }
 
 form {
-  order: 2;
     width:24.7%;
-    height: 55%;
-
+    margin: auto;
 }
 .search {
-  flex-grow: 2;
-    order: 3;
+    padding: 2% 5%;
     background: #f0f8ff;
     border: 10% solid black;
-    width: 100%;
-    height: 90%;
+    width: 80%;
+    margin-top: 3%;
+    display: inline-block;
 }
 .button {
  /*   left:-4px; */
@@ -63,10 +61,6 @@ form {
     border-bottom: 4px orange solid;
 }
 
-.timer {
-  order: 4;
-  align-self: flex-end;
-}
 
 .container {
   display: grid;
