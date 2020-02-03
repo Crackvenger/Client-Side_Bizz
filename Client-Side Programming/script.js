@@ -40,3 +40,66 @@ function hidePrice4() {
     document.getElemetById("hiddenPrice4").style.visibility=
     'hidden';
 }
+function showPrice5() {
+    document.getElementById("hiddenPrice5").style.visibility=
+    'visible';
+}
+function hidePrice5() {
+    document.getElementById("hiddenPrice5").style.visibility=
+    'hidden';
+}
+
+function showPrice6() {
+    document.getElementById("hiddenPrice6").style.visibility=
+    'visible';
+}
+function hidePrice6() {
+    document.getElementById("hiddenPrice6").style.visibility=
+    'hidden';
+}
+
+function showPrice7() {
+    document.getElementById("hiddenPrice7").style.visibility=
+        'visible';
+}
+function hidePrice7() {
+    document.getElementById("hiddenPrice7").style.visibility=
+        'hidden';
+}
+
+function showPrice8() {
+    document.getElementById("hiddenPrice8").style.visibility=
+    'visible';
+}
+function hidePrice8() {
+    document.getElementById("hiddenPrice8").style.visibility=
+    'hidden';
+}
+
+function showPrice9() {
+    document.getElementById("hiddenPrice9").style.visibility=
+    'visible';
+}
+function hidePrice9() {
+    document.getElementById("hiddenPrice9").style.visibility=
+    'hidden';
+}
+
+function showPrice10() {
+    document.getElementById("hiddenPrice10").style.visibility=
+    'visible';
+}
+function hidePrice10() {
+    document.getElementById("hiddenPrice10").style.visibility=
+    'hidden';
+}
+
+function showPrice11() {
+    document.getElementById("hiddenPrice11").style.visibility=
+    'visible';
+}
+function hidePrice11() {
+    document.getElementById("hiddenPrice11").style.visibility=
+    'hidden';
+}
+
