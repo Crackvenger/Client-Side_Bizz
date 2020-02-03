@@ -103,3 +103,16 @@ function hidePrice11() {
     'hidden';
 }
 
+window.setTimeout("time()", 1000);
+    
+    function time() {
+        var time = new Date();
+        setTimeout("time()", 1000);
+        document.getElementById("hour").innerHTML =
+        time.getHours();
+        document.getElementById("minute").innerHTML =
+        time.getMinutes();
+        document.getElementById("second").innerHTML =
+        time.getSeconds();
+    }
+
