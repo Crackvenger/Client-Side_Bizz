@@ -181,18 +181,17 @@ form {
 }
 #hiddenPrice1 {
   position: absolute;
-  left: 36%;
+  left: 20%;
   top: 35%;
   opacity: 0.8;
   background-color: black;
   color: yellow;
-  height: 40vh;
+  height: 15vh;
   width: 20vh;
   z-index: 2;
   border-radius: 6%;
   visibility: hidden;
 }
-
 #hiddenPrice2 {
   position: absolute;
   left: 46%;
