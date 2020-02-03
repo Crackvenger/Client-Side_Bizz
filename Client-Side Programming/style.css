@@ -192,15 +192,16 @@ form {
   border-radius: 6%;
   visibility: hidden;
 }
+
 #hiddenPrice2 {
   position: absolute;
-  left: 46%;
-  top: 35%;
+  left: 40%;
+  top: 45%;
   opacity: 0.8;
   border-radius: 6%;
   background-color: black;
   color: yellow;
-  height: 40vh;
+  height: 15vh;
   width: 20vh;
   z-index: 2;
   visibility: hidden;
