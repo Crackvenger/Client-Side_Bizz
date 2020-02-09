@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            #login_frame {
+                width: 400px;
+                height: 260px;
+                padding: 10px;
+                visibility: visible;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -200px;
+                margin-top: -200px;
+
+                background-color: pink;
+
+                border-radius: 10px;
+                text-align: center;
+            }
+            form p > * {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .label_input {
+                font-size: 20px;
+
+                width: 40px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+
+                color: white;
+                background-color: rgb(72,61,139);
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                padding: 2px;
+            }
+            .text_field {
+                width: 278px;
+                height: 28px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border: 0;
+            }
+            #btn_login {
+                font-size: 14px;
+
+                width: 120px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+
+                color: white;
+                background-color: #3BD9FF;
+                border-radius: 6px;
+                border: 0;
+
+                float: left;
+            }
+
+            #btn_login:hover{
+                cursor: pointer;
+                background-color: red;
+            }
+            #btn_cancel:hover{
+                cursor: pointer;
+                background-color: red;
+            }
+            #btn_cancel {
+                font-size: 14px;
+
+                width: 120px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                display: block;
+                color: white;
+                background-color: #3BD9FF;
+                border-radius: 6px;
+                border: 0;
+                clear: both;
+                float: left;
+            }
+
+
+            #forget_pwd {
+                font-size: 18px;
+                color: white;
+                text-decoration: none;
+                position: relative;
+                float: right;
+                top: 5px;
+            }
+            #forget_pwd:hover {
+                color: red;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            #login_control {
+                padding: 0 28px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="login_frame">
+            <h1 style="text-align: center;color:white"> Login </h1>
+            <p><label class="label_input">Account</label><input type="text" id="username" class="text_field"/></p>
+        <p><label class="label_input">Password</label><input type="text" id="password" class="text_field"/></p>
+
+        <div id="login_control">
+            <button type="button" id="btn_login"  οnclick="login()">Login</button>
+            <a id="forget_pwd" href="#">Forget the password？</a>
+        </div>
+
+        <div id="cancel_control">
+            <button type="button" id="btn_cancel"  οnclick="cancel()">Cancel</button>
+        </div>
+      </div>
+        <script>
+
+            function login() {
+             var username = document.getElementById("username");
+             var password = document.getElementById("password");
+
+             if (username.value == " ") {
+                 alert("Please input your account");
+            }
+            else if (password.value  == " ") {
+                 alert("Please input your password");
+             }
+             else if(username.value == "admin" && password.value == "123456"){
+                 window.location.href="welcome.html";
+             }
+             else {
+                 alert("Please input the correct account and passwrd!");
+             }
+            }
+
+            function cancel() {
+              document.getElementById("login_frame").style.visibility= 'hidden';
+            }
+                </script>
+    </body>
+</html>

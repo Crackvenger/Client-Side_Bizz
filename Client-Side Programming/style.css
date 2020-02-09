@@ -105,7 +105,7 @@ form {
    visibility: visible;
    cursor: pointer;
   transform: rotate(-60deg);
-  z-index: 1;
+  z-index: -1;
 }
 
 .hex1 {
@@ -174,10 +174,13 @@ form {
   height: 150%;
 }
 
+#result {
+  color: yellow;
+}
 
 #hiddenPrice1 {
   position: absolute;
-  left: 20%;
+  left: 35%;
   top: 35%;
   opacity: 0.8;
   background-color: black;
@@ -261,8 +264,8 @@ form {
 
 #hiddenPrice7 {
     position: absolute;
-    left: 20%;
-    top: 60%;
+    left: 34%;
+    top: 57%;
     opacity: 0.8;
     border-radius: 6%;
     background-color: black;
@@ -275,8 +278,8 @@ form {
 
 #hiddenPrice8 {
     position: absolute;
-    left: 75%;
-    top: 60%;
+    left: 68%;
+    top: 69%;
     opacity: 0.8;
     border-radius: 6%;
     background-color: black;
@@ -303,8 +306,8 @@ form {
 
 #hiddenPrice10 {
     position: absolute;
-    left: 65%;
-    top: 78%;
+    left: 49%;
+    top: 30%;
     opacity: 0.8;
     border-radius: 6%;
     background-color: black;
@@ -318,7 +321,7 @@ form {
 #hiddenPrice11 {
     position: absolute;
     left: 53%;
-    bottom: 0.01%;
+    bottom: 40%;
     opacity: 0.8;
     border-radius: 6%;
     background-color: black;
@@ -432,8 +435,8 @@ a{
 .c2{
     background-color: rgba(0,0,0,0.9);
     position: fixed;
-    width: 500px;
-    height: 400px;
+    width: 450px;
+    height: 350px;
     top:55%;
     left: 45%;
     z-index: 3;
@@ -448,15 +451,22 @@ a{
     color: white;
     background-color:#BEC421;
     border-radius: 6px;
+    font-size: 1.5em;
+    height: 2em;
+    width: 9em;
     border: 0;
     display:block;
 }
 #login:hover{
+
     background-color: green;
     cursor: pointer;
 }
 
 #cancel{
+  font-size: 1.5em;
+  height: 2em;
+  width: 9em;
     color: white;
     background-color:#BEC421;
     border-radius: 6px;

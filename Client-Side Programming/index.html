@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>grid practice</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="header">
       <div id="logo">
-          <a href="Client-side.html"><img src="../shop.png" alt="logo" height="100%" width="100%"></a>
+          <a href="Client-side.html"><img src="shop.png" alt="logo" height="100%" width="100%"></a>
       </div>
-      <button type="button" name="button" onclick="Show();">login</button>
+      <button id="request" type="button" name="button" onclick="Show()">login</button>
       <form>
       <input class="search" type="text" placeholder="Search..." name="name">
       <p id="run"></p>
@@ -76,15 +76,16 @@
       </div>
       <div id="shade" class="c1 hide"></div>
             <div id="modal" class="c2 hide">
-                <div style="width:400px; font-size:30px; padding: 20px; color:white; ">
-                <p>Account<input type="text" /></p>
-                 <p>Password<input type="password"/></p>
+                <div style="width:400px; font-size:30px; padding: 20px; color:white; margin: 2px;">
+                <p>Account    <input type="text" style="width:230px; height:30px" /></p>
+                 <p>Password    <input type="password" style="width:230px; height:30px"/></p>
                 </div>
 
                 <div style=" font-size:20px; padding: 20px;position:relative;top:-30px;">
                 <p>
                   <input type="button" value="Login" id="login" onclick="login();">
                   <input type="button" value="Cancel" id="cancel" onclick="Hide();" >
+                  <p id="result"></p>
                 </p>
                 </div>
             </div>
@@ -125,6 +126,41 @@
     </div>
     <script src="script.js"></script>
     <script>
+    $(document).ready(function() {
+      $("input").keyup(function() {
+        var name = ("input").val();
+        $.post("suggestions.php", {
+          suggestion: name
+        }, function(data,status) {
+          $("#run").html(data);
+          $
+        });
+      });
+    });
+    var $username = document.getElementById("username");
+    var $password = document.getElementById("password");
+    var $btn = $("#request");
+    var $response = $("#result");
+    var $page = $("#loadSite");
+    $btn.on('click',function(){
+      $(this).hide();
+      /*$(".container").hide();
+      $page.load("login.html");*/
+    })
+        function Show(){
+               document.getElementById('shade').classList.remove('hide');
+               document.getElementById('modal').classList.remove('hide');
+           }
+            function Hide(){
+               document.getElementById('shade').classList.add('hide');
+               document.getElementById('modal').classList.add('hide');
+               $("#request").show();
+           }
+           function login() {
+               /*alert('Successful');*/
+               $response.load("result.txt");
+           }
+
     window.setTimeout("time()", 1000);
 
         function time() {

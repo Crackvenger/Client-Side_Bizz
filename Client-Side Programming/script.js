@@ -1,25 +1,4 @@
-/*$(document).ready(function() {
-  $("input").keyup(function() {
-    var name = ("input").val();
-    $.post("suggestions.php", {
-      suggestion: name;
-    }, function(data,status) {
-      $("#run").html(data);
-    });
-  });
-});*/
 
-    function Show(){
-           document.getElementById('shade').classList.remove('hide');
-           document.getElementById('modal').classList.remove('hide');
-       }
-        function Hide(){
-           document.getElementById('shade').classList.add('hide');
-           document.getElementById('modal').classList.add('hide');
-       }
-       function login() {
-           alert('Successful')
-       }
 
 var picture = ["bestad.jpg", "Converse-Shoe.png", "East-Side-Games-IMG_2190.jpg"];
 var msec=0;
@@ -36,7 +15,7 @@ function showPrice2() {
 function hidePrice2() {
   document.getElementById("hiddenPrice2").style.visibility= 'hidden';
 }
-function showPrice3() {
+/*function showPrice3() {
 document.getElementById("hiddenPrice3").style.visibility='visible';
 }
 function hidePrice3() {
@@ -48,7 +27,7 @@ document.getElementById("hiddenPrice4").style.visibility='visible';
 }
 function hidePrice4() {
 document.getElemetById("hiddenPrice4").style.visibility='hidden';
-}
+}*/
 function showPrice5() {
     document.getElementById("hiddenPrice5").style.visibility=
     'visible';
@@ -85,14 +64,14 @@ function hidePrice8() {
     'hidden';
 }
 
-function showPrice9() {
+/*function showPrice9() {
     document.getElementById("hiddenPrice9").style.visibility=
     'visible';
 }
 function hidePrice9() {
     document.getElementById("hiddenPrice9").style.visibility=
     'hidden';
-}
+}*/
 
 function showPrice10() {
     document.getElementById("hiddenPrice10").style.visibility=
