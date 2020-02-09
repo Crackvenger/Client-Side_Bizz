@@ -1,13 +1,25 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
   $("input").keyup(function() {
     var name = ("input").val();
     $.post("suggestions.php", {
-      suggestion: name
+      suggestion: name;
     }, function(data,status) {
       $("#run").html(data);
     });
   });
-});
+});*/
+
+    function Show(){
+           document.getElementById('shade').classList.remove('hide');
+           document.getElementById('modal').classList.remove('hide');
+       }
+        function Hide(){
+           document.getElementById('shade').classList.add('hide');
+           document.getElementById('modal').classList.add('hide');
+       }
+       function login() {
+           alert('Successful')
+       }
 
 var picture = ["bestad.jpg", "Converse-Shoe.png", "East-Side-Games-IMG_2190.jpg"];
 var msec=0;
@@ -99,16 +111,3 @@ function hidePrice11() {
     document.getElementById("hiddenPrice11").style.visibility=
     'hidden';
 }
-
-window.setTimeout("time()", 1000);
-
-    function time() {
-        var time = new Date();
-        setTimeout("time()", 1000);
-        document.getElementById("hour").innerHTML =
-        time.getHours();
-        document.getElementById("minute").innerHTML =
-        time.getMinutes();
-        document.getElementById("second").innerHTML =
-        time.getSeconds();
-    }

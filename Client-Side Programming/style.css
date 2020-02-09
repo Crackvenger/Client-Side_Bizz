@@ -4,8 +4,8 @@
 }
 
 body {
-  background: rgb(11,166,138);
-  background: linear-gradient(90deg, rgba(11,166,138,0.8242647400757178) 8%, rgba(255,0,154,1) 53%, rgba(29,241,167,1) 80%);
+  background: rgb(166,143,11);
+  background: linear-gradient(90deg, rgba(166,143,11,0.8242647400757178) 8%, rgba(196,0,255,1) 55%, rgba(241,29,87,1) 80%);
 }
 
 #header {
@@ -14,7 +14,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     flex-flow: row wrap;
-    height: 6rem;
+    height: 4rem;
     width: 100%;
     background: yellow;
 }
@@ -53,6 +53,7 @@ form {
     font-weight: bold;
     height: 40%;
     min-width: 5%;
+    display: inline-block;
 
 }
 .button: hover {
@@ -69,18 +70,18 @@ form {
 
 .container {
   display: grid;
-  grid-template-columns:[ads] 20% [line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20% [line6] 20%;
+  grid-template-columns:[start] 12% [line0] 12% [line1] 12% [line2] 12% [line3] 12% [line4] 12% [line5] 12% [line6] 12%;
   grid-template-rows:auto;
   grid-template-areas:
-      "ads hex1 . hex3 . hex5 ."
-      "ads . hex2 . hex4 . ."
-      "ads hex7 . hex6 . hex8 ."
-      "ads . hex9 . hex10 . ."
-      "ads . . hex11 . . .";
+      "ads . hex1 . hex10 . hex5 ."
+      "ads . . hex2 . hex11 . ."
+      "ads . hex7 . hex6 . hex8 .";
+      /*". . . hex9 . hex3 . ."
+      ". . . . hex4 . . .";*/
 
-  width: 55%;
+  width: 65%;
   height: 76vh;
-  margin: 5% auto;
+  margin: 0% auto;
 
 }
 
@@ -330,12 +331,13 @@ form {
 
 .timer {
     width: 35%;
+    height: 50%;
     margin: 10px;
  }
 .box {
     float: left;
     width: 10%;
-    height: 15%;
+    height: 55%;
     background-color: darkturquoise;
     border: 2px solid black;
     top: 10%;
@@ -357,28 +359,29 @@ a{
   /*换成absolute会直接靠在左边, 这里时设置容器(就是装图片的；不是外框)大小和位置*/
   grid-area: ads;
   position: relative;
-  width: 300px;
-  height: 200px;
-  margin:100px auto 0 auto;
+  width: 196%;
+  height: 100%;
+  margin:80% auto 0 auto;
   overflow: hidden;
 }
 /*这里是设置外框位置*/
 .containerpicturerotate .wrap {
+  grid-area: ads;
   position: absolute;
   width: 2100px;
-  height: 200px;
+  height: 100%;
   z-index: 1;
 }
 .containerpicturerotate .wrap img {
   grid-area: ads;
   float: left;
   width: 300px;
-  height: 200px;
+  height: 250%;
 }
 .containerpicturerotate .buttons {
   position: absolute;
-  right: 10px;
-  bottom:40px;
+  right: 30px;
+  bottom:49px;
   width: 150px;
   height: 10px;
   z-index: 1;
@@ -417,4 +420,50 @@ a{
 }
 .containerpicturerotate:hover .arrow {
   display: block;
+}
+/*Colin*/
+.hide{
+    display: none;
+}
+.c1{
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.c2{
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    width: 500px;
+    height: 400px;
+    top:55%;
+    left: 45%;
+    z-index: 3;
+    margin-top: -210px;
+    margin-left: -190px;
+}
+#modal p {
+    margin-left:20px;
+}
+
+#login{
+    color: white;
+    background-color:#BEC421;
+    border-radius: 6px;
+    border: 0;
+    display:block;
+}
+#login:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+#cancel{
+    color: white;
+    background-color:#BEC421;
+    border-radius: 6px;
+    border: 0;
+    display:block;
+}
+#cancel:hover{
+    background-color: red;
+    cursor: pointer;
 }
