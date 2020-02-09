@@ -24,21 +24,18 @@ function showPrice2() {
 function hidePrice2() {
   document.getElementById("hiddenPrice2").style.visibility= 'hidden';
 }
-function showPrice3() {                                 
-document.getElementById("hiddenPrice3").style.visibility=
-    'visible';
+function showPrice3() {
+document.getElementById("hiddenPrice3").style.visibility='visible';
 }
 function hidePrice3() {
-    document.getElementById("hiddenPrice3").style.visibilty= 'hidden';
+document.getElementById("hiddenPrice3").style.visibilty= 'hidden';
 }
 
 function showPrice4() {
-    document.getElementById("hiddenPrice4").style.visibility=
-'visible';
+document.getElementById("hiddenPrice4").style.visibility='visible';
 }
 function hidePrice4() {
-    document.getElemetById("hiddenPrice4").style.visibility=
-    'hidden';
+document.getElemetById("hiddenPrice4").style.visibility='hidden';
 }
 function showPrice5() {
     document.getElementById("hiddenPrice5").style.visibility=
@@ -104,7 +101,7 @@ function hidePrice11() {
 }
 
 window.setTimeout("time()", 1000);
-    
+
     function time() {
         var time = new Date();
         setTimeout("time()", 1000);
@@ -115,4 +112,3 @@ window.setTimeout("time()", 1000);
         document.getElementById("second").innerHTML =
         time.getSeconds();
     }
-
