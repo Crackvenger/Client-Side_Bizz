@@ -64,14 +64,14 @@ form {
 
 .container {
   display: grid;
-  grid-template-columns:[line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20% [line6] 20% [line7] 20%;
+  grid-template-columns:[ads] 20% [line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20% [line6] 20% [line7] 20%;
   grid-template-rows:auto;
   grid-template-areas:
-      "hex1 . hex3 . hex5 . ads"
-      ". hex2 . hex4 . . ads"
-      "hex7 . hex6 . hex8 . ads"
-      ". hex9 . hex10 . . ads"
-      ". . hex11 . . . ads";
+      "ads hex1 . hex3 . hex5 . ads"
+      "ads . hex2 . hex4 . . ads"
+      "ads hex7 . hex6 . hex8 . ads"
+      "ads . hex9 . hex10 . . ads"
+      "ads . . hex11 . . . ads";
   width: 55%;
   height: 76vh;
   margin: 5% auto;
@@ -343,4 +343,79 @@ form {
 }
 h3 {
     text-align: center;
+}
+
+
+* {
+  margin:0;
+  padding:0;
+  
+}
+a{
+  text-decoration: none;
+}
+.containerpicturerotate {
+  /*换成absolute会直接靠在左边, 这里时设置容器(就是装图片的；不是外框)大小和位置*/
+  grid-area: ads;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin:100px auto 0 auto;
+  overflow: hidden;
+}
+/*这里是设置外框位置*/
+.containerpicturerotate .wrap {
+  position: absolute;
+  width: 2100px;
+  height: 200px;
+  z-index: 1;
+}
+.containerpicturerotate .wrap img {
+  grid-area: ads;
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.containerpicturerotate .buttons {
+  position: absolute;
+  right: 10px;
+  bottom:40px;
+  width: 150px;
+  height: 10px;
+  z-index: 1;
+}
+/*底下的那个1-5小圆点调节*/
+.containerpicturerotate .buttons span {
+  margin-left: 6px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color:rgb(255, 0, 255);
+  text-align: center;
+  color:white;
+  cursor: pointer;
+}
+.containerpicturerotate .buttons span.on{
+  background-color: red;
+}
+.containerpicturerotate .arrow {
+  position: absolute;
+  top: 35%;
+  color: rgba(29,241,167,1);
+  background-color: transparent;
+  padding:0px 14px;
+  border-radius: 50%;
+  font-size: 50px;
+  z-index: 2;
+  display: none;
+}
+.containerpicturerotate .arrow_left {
+  left: 10px;
+}
+.containerpicturerotate .arrow_right {
+  right: 10px;
+}
+.containerpicturerotate:hover .arrow {
+  display: block;
 }
